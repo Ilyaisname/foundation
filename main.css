@@ -1,0 +1,31 @@
+* {
+  text-transform: uppercase;
+  text-align: center;
+  border: .1rem solid;
+}
+
+.header {
+  background-color: rgb(182, 240, 176);
+  padding: 1rem;
+}
+
+.sidebar-left {
+  background-color: rgb(204, 226, 243);
+  padding: 1rem;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 1rem;
+  
+}
+
+.sidebar-right {
+  background-color: rgb(241, 211, 155);
+  padding: 1rem;
+}
+
+.footer {
+  background-color: rgb(230, 184, 240);
+  padding: 1rem;
+}
