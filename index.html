@@ -77,6 +77,51 @@
                   <li><a href="#0" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
                 </ul>
               </div>
+          </div>
+
+            <div class="grid-x grid-padding-x align-center">
+                <form data-abide novalidate>
+                    <div class="grid-container">
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <input type="text" placeholder="Username" required pattern="text">
+                                <span class="form-error" data-form-error-on="required">
+                                   please enter your name!
+                                </span>
+                            </div>
+                            <div class="medium-6 cell">
+                                <input type="tel" placeholder="tel" required pattern="tel">
+                                <span class="form-error" data-form-error-on="required">
+                                   please enter your phone num!
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <input type="text" required pattern="email">
+                        <span class="form-error" data-form-error-on="required">
+                            please enter your email address!
+                        </span>
+                    </div>
+                    <div class="grid-container">
+                        <div class="input-group">
+                            <span class="input-group-label">Время звонка:</span>
+                            <select class="input-group-field">
+                                <option>08:00 - 09:00</option>
+                                <option>09:00 - 10:00</option>
+                                <option>10:00 - 11:00</option>
+                                <option>11:00 - 12:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <input required type="checkbox" name="exampleCheckbox" id="exampleCheckboxB" value="personal data">
+                        <label for="exampleCheckboxB">Cогласие на обработку персональных данных</label>
+                    </div>
+                    <div class="grid-container">
+                        <input type="submit" class="button" value="SEND">
+                    </div>
+                </form>
             </div>
         </div>
         <div class="small small-order-3 medium-12 medium-order-3  large-2 columns sidebar-right">
