@@ -12,8 +12,55 @@
   <div class="grid-container">
     
        <div class="grid-x grid-padding-x">
-        <div class="small-12 medium-12 large-12 columns header">header</div>
-      </div>
+          <div class="small-12 medium-12 large-12 columns header">
+            <button class="button" data-toggle="animatedModal10">Заказать обратный звонок</button>
+            <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
+              <h6>Оставьте заявку и мы вам перезвоним</h6>
+              <form data-abide novalidate>
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-6 cell">
+                            <input type="text" placeholder="Username" required pattern="text">
+                            <span class="form-error" data-form-error-on="required">
+                              please enter your name!
+                            </span>
+                        </div>
+                        <div class="medium-6 cell">
+                            <input type="tel" placeholder="tel" required pattern="tel">
+                            <span class="form-error" data-form-error-on="required">
+                              please enter your phone num!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <input type="text" required pattern="email">
+                    <span class="form-error" data-form-error-on="required">
+                        please enter your email address!
+                    </span>
+                </div>
+                <div class="grid-container">
+                    <div class="input-group">
+                        <span class="input-group-label">Время звонка:</span>
+                        <select class="input-group-field">
+                            <option>08:00 - 09:00</option>
+                            <option>09:00 - 10:00</option>
+                            <option>10:00 - 11:00</option>
+                            <option>11:00 - 12:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <input required type="checkbox" name="exampleCheckbox" id="exampleCheckboxB" value="personal data">
+                    <label for="exampleCheckboxB">Cогласие на обработку персональных данных</label>
+                </div>
+                <div class="grid-container">
+                    <input type="submit" class="button" value="SEND">
+                </div>
+            </form>
+            </div>
+          </div>
+       </div>
     
       <div class="grid-x grid-padding-x">
         <div class="small small-order-2 medium-4 medium-order-1 large-2 columns sidebar-left">
@@ -165,9 +212,9 @@
           
       </div>
       <div class="grid-x grid-padding-x">
-        <div class="small-12 columns footer">footer</div>
+        <div class="small-12 medium-12 large-12 columns footer">footer</div>
       </div>
-  
+     
   </div>
 
   <script src="assets/js/app.js"></script>
